@@ -8,6 +8,8 @@ This code is based on the original IsoGCN's code: https://github.com/yellowshipp
 
 ## Requirements
 
+NOTE: This project requires Python3.9 and CUDA 11.1.
+
 ## Clone
 
 This repository uses submodules, so to clone:
