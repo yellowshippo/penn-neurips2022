@@ -8,6 +8,14 @@ This code is based on the original IsoGCN's code: https://github.com/yellowshipp
 
 ## Requirements
 
+## Clone
+
+This repository uses submodules, so to clone:
+
+```clone
+git clone git@github.com:yellowshippo/penn_neurips2022.git --recurse-submodules 
+```
+
 ### Installation
 
 To install requirements:
