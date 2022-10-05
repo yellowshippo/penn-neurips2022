@@ -1,0 +1,33 @@
+data:
+  raw: data/grad/raw
+  interim: data/grad/interim
+  preprocessed: data/grad/preprocessed
+  inferred: data/grad/inferred
+  train:
+    - data/grad/preprocessed/train
+  validation:
+    - data/grad/preprocessed/validation
+preprocess:
+  nodal_adj: identity
+  nodal_nadj:
+    method: identity
+  nodal_grad_x_1:
+    method: isoam_scale
+    other_components:
+      - nodal_grad_y_1
+      - nodal_grad_z_1
+  nodal_grad_y_1:
+    same_as: nodal_grad_x_1
+  nodal_grad_z_1:
+    same_as: nodal_grad_x_1
+  nodal_surface_normal: identity
+  weighted_surface_normal_1: identity
+  inversed_moment_tensors_1:
+    same_as: nodal_grad_x_1
+  node:
+    method: standardize
+    componentwise: false
+  phi: identity
+  grad_phi: identity
+  neumann: identity
+  directed_neumann: identity

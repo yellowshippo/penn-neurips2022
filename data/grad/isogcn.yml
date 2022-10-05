@@ -1,0 +1,98 @@
+data:
+  interim: data/grad/interim
+  preprocessed: data/grad/preprocessed
+  inferred: data/grad/inferred
+  train:
+    - data/grad/preprocessed/train
+  validation:
+    - data/grad/preprocessed/validation
+  test:
+    - data/grad/preprocessed/test
+
+trainer:
+  inputs:
+    rank0:
+      - name: phi
+        dim: 1
+      - name: neumann
+        dim: 1
+    normal:
+      - name: weighted_surface_normal_1
+        dim: 1
+  support_inputs:
+    - nodal_grad_x_1
+    - nodal_grad_y_1
+    - nodal_grad_z_1
+  outputs:
+    - name: grad_phi
+      dim: 1
+  prune: false
+  n_epoch: 1000
+  log_trigger_epoch: 1
+  stop_trigger_epoch: 10
+  seed: 0
+  lazy: false
+  batch_size: 1
+  num_workers: 0
+
+model:
+  blocks:
+    # Encoder
+    - name: IN_MLP
+      type: mlp
+      is_first: true
+      bias: false
+      input_keys:
+        - rank0
+      destinations:
+        - ISOGCN_1
+      nodes:
+        - -1
+        - 8
+        - 16
+        - 16
+      activations:
+        - leaky_relu
+        - leaky_relu
+        - identity
+    - name: IN_NORMAL
+      type: identity
+      is_first: true
+      input_keys:
+        - normal
+      destinations:
+        - CAT
+
+    # Processor 1
+    - name: ISOGCN_1
+      type: iso_gcn
+      destinations:
+        - CAT
+      bias: false
+      nodes:
+        - -1
+        - 16
+      activations:
+        - identity
+      support_input_indices:
+        - 0
+        - 1
+        - 2
+      optional:
+        propagations:
+          - convolution
+        ah_w: true
+        create_neumann_linear: false
+    - name: CAT
+      type: concatenator
+      destinations:
+        - DECODER
+
+    # Decoder
+    - name: DECODER
+      type: mlp
+      nodes:
+        - -1
+        - 1
+      activations:
+        - identity

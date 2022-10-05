@@ -1,0 +1,198 @@
+data:
+  interim: data/fluid/interim
+  preprocessed: data/fluid/preprocessed
+  inferred: data/fluid/inferred
+preprocess:
+  node: standardize
+  normal: identity
+
+  nodal_adj: identity
+  nodal_nadj: identity
+  nodal_x_grad_hop1:
+    method: isoam_scale
+    other_components:
+      - nodal_y_grad_hop1
+      - nodal_z_grad_hop1
+  nodal_y_grad_hop1:
+    same_as: nodal_x_grad_hop1
+  nodal_z_grad_hop1:
+    same_as: nodal_x_grad_hop1
+
+  nodal_U_step0: std_scale
+  nodal_U_step1:
+    same_as: nodal_U_step0
+  nodal_U_step2:
+    same_as: nodal_U_step0
+  nodal_U_step3:
+    same_as: nodal_U_step0
+  nodal_U_step4:
+    same_as: nodal_U_step0
+  nodal_U_step5:
+    same_as: nodal_U_step0
+  nodal_U_step6:
+    same_as: nodal_U_step0
+  nodal_U_step7:
+    same_as: nodal_U_step0
+  nodal_U_step8:
+    same_as: nodal_U_step0
+  nodal_U_step9:
+    same_as: nodal_U_step0
+  nodal_U_step10:
+    same_as: nodal_U_step0
+  nodal_U_step11:
+    same_as: nodal_U_step0
+  nodal_U_step12:
+    same_as: nodal_U_step0
+  nodal_U_step13:
+    same_as: nodal_U_step0
+  nodal_U_step14:
+    same_as: nodal_U_step0
+  nodal_U_step15:
+    same_as: nodal_U_step0
+  nodal_U_step16:
+    same_as: nodal_U_step0
+  nodal_U_step17:
+    same_as: nodal_U_step0
+  nodal_U_step18:
+    same_as: nodal_U_step0
+  nodal_U_step19:
+    same_as: nodal_U_step0
+  nodal_U_step20:
+    same_as: nodal_U_step0
+  nodal_U_step21:
+    same_as: nodal_U_step0
+  nodal_U_step22:
+    same_as: nodal_U_step0
+  nodal_U_step23:
+    same_as: nodal_U_step0
+  nodal_U_step24:
+    same_as: nodal_U_step0
+  nodal_U_step25:
+    same_as: nodal_U_step0
+  nodal_U_step26:
+    same_as: nodal_U_step0
+  nodal_U_step27:
+    same_as: nodal_U_step0
+  nodal_U_step28:
+    same_as: nodal_U_step0
+  nodal_U_step29:
+    same_as: nodal_U_step0
+  nodal_U_step30:
+    same_as: nodal_U_step0
+  nodal_U_step31:
+    same_as: nodal_U_step0
+  nodal_U_step32:
+    same_as: nodal_U_step0
+  nodal_U_step33:
+    same_as: nodal_U_step0
+  nodal_U_step34:
+    same_as: nodal_U_step0
+  nodal_U_step35:
+    same_as: nodal_U_step0
+  nodal_U_step36:
+    same_as: nodal_U_step0
+  nodal_U_step37:
+    same_as: nodal_U_step0
+  nodal_U_step38:
+    same_as: nodal_U_step0
+  nodal_U_step39:
+    same_as: nodal_U_step0
+  nodal_U_step40:
+    same_as: nodal_U_step0
+  nodal_boundary_U:
+    same_as: nodal_U_step0
+  padded_dirichlet_U:
+    same_as: nodal_U_step0
+  dirichlet_flag_U: identity
+
+  nodal_p_step0: std_scale
+  nodal_p_step1:
+    same_as: nodal_p_step0
+  nodal_p_step2:
+    same_as: nodal_p_step0
+  nodal_p_step3:
+    same_as: nodal_p_step0
+  nodal_p_step4:
+    same_as: nodal_p_step0
+  nodal_p_step5:
+    same_as: nodal_p_step0
+  nodal_p_step6:
+    same_as: nodal_p_step0
+  nodal_p_step7:
+    same_as: nodal_p_step0
+  nodal_p_step8:
+    same_as: nodal_p_step0
+  nodal_p_step9:
+    same_as: nodal_p_step0
+  nodal_p_step10:
+    same_as: nodal_p_step0
+  nodal_p_step11:
+    same_as: nodal_p_step0
+  nodal_p_step12:
+    same_as: nodal_p_step0
+  nodal_p_step13:
+    same_as: nodal_p_step0
+  nodal_p_step14:
+    same_as: nodal_p_step0
+  nodal_p_step15:
+    same_as: nodal_p_step0
+  nodal_p_step16:
+    same_as: nodal_p_step0
+  nodal_p_step17:
+    same_as: nodal_p_step0
+  nodal_p_step18:
+    same_as: nodal_p_step0
+  nodal_p_step19:
+    same_as: nodal_p_step0
+  nodal_p_step20:
+    same_as: nodal_p_step0
+  nodal_p_step21:
+    same_as: nodal_p_step0
+  nodal_p_step22:
+    same_as: nodal_p_step0
+  nodal_p_step23:
+    same_as: nodal_p_step0
+  nodal_p_step24:
+    same_as: nodal_p_step0
+  nodal_p_step25:
+    same_as: nodal_p_step0
+  nodal_p_step26:
+    same_as: nodal_p_step0
+  nodal_p_step27:
+    same_as: nodal_p_step0
+  nodal_p_step28:
+    same_as: nodal_p_step0
+  nodal_p_step29:
+    same_as: nodal_p_step0
+  nodal_p_step30:
+    same_as: nodal_p_step0
+  nodal_p_step31:
+    same_as: nodal_p_step0
+  nodal_p_step32:
+    same_as: nodal_p_step0
+  nodal_p_step33:
+    same_as: nodal_p_step0
+  nodal_p_step34:
+    same_as: nodal_p_step0
+  nodal_p_step35:
+    same_as: nodal_p_step0
+  nodal_p_step36:
+    same_as: nodal_p_step0
+  nodal_p_step37:
+    same_as: nodal_p_step0
+  nodal_p_step38:
+    same_as: nodal_p_step0
+  nodal_p_step39:
+    same_as: nodal_p_step0
+  nodal_p_step40:
+    same_as: nodal_p_step0
+  nodal_boundary_p:
+    same_as: nodal_p_step0
+  padded_dirichlet_p:
+    same_as: nodal_p_step0
+  dirichlet_flag_p: identity
+
+  nodal_distance: std_scale
+  nodal_level0p5: std_scale
+  nodal_level1: std_scale
+  nodal_level2: std_scale

@@ -1,0 +1,3141 @@
+conversion:
+  file_type: polyvtk
+  finished_file: converted
+  mandatory: []
+  mandatory_variables: []
+  max_process: 1000
+  optional: []
+  optional_variables: []
+  required_file_names:
+  - VTK
+  save_femio: false
+  skip_femio: true
+  skip_save: false
+  time_series: false
+data:
+  develop: []
+  inferred:
+  - data/fluid/inferred
+  interim:
+  - data/fluid/interim
+  pad: false
+  preprocessed:
+  - data/fluid/preprocessed
+  raw:
+  - data/fluid/raw
+  test:
+  - data/fluid/preprocessed/test/a/a-0.70/fine/0
+  - data/fluid/preprocessed/test/a/a-0.80/fine/0
+  - data/fluid/preprocessed/test/b/a-0.10_b0.40/fine/0
+  - data/fluid/preprocessed/test/b/a-0.20_b0.20/fine/0
+  - data/fluid/preprocessed/test/b/a-0.30_b0.00/fine/0
+  - data/fluid/preprocessed/test/b/a-0.30_b0.40/fine/0
+  - data/fluid/preprocessed/test/b/a-0.30_b0.80/fine/0
+  - data/fluid/preprocessed/test/b/a-0.50_b0.50/fine/0
+  - data/fluid/preprocessed/test/b/a-0.70_b0.20/fine/0
+  - data/fluid/preprocessed/test/b/a-0.80_b0.50/fine/0
+  - data/fluid/preprocessed/test/b/a-0.80_b0.60/fine/0
+  - data/fluid/preprocessed/test/b/a-0.80_b1.00/fine/0
+  - data/fluid/preprocessed/test/b/a-0.90_b0.00/fine/0
+  - data/fluid/preprocessed/test/b/a-0.90_b0.10/fine/0
+  - data/fluid/preprocessed/test/b/a-1.00_b0.00/fine/0
+  - data/fluid/preprocessed/test/b/a0.00_b0.30/fine/0
+  - data/fluid/preprocessed/test/c/a-0.10_b0.90/fine/0
+  - data/fluid/preprocessed/test/c/a-0.20_b0.00/fine/0
+  - data/fluid/preprocessed/test/c/a-0.20_b0.20/fine/0
+  - data/fluid/preprocessed/test/c/a-0.20_b0.50/fine/0
+  - data/fluid/preprocessed/test/c/a-0.70_b0.40/fine/0
+  - data/fluid/preprocessed/test/c/a-0.80_b0.20/fine/0
+  - data/fluid/preprocessed/test/c/a-0.80_b1.00/fine/0
+  - data/fluid/preprocessed/test/c/a-1.00_b0.70/fine/0
+  - data/fluid/preprocessed/test/c/a-1.00_b0.90/fine/0
+  train:
+  - data/fluid/preprocessed/train/a/a-0.10/fine/0
+  - data/fluid/preprocessed/train/a/a-0.20/fine/0
+  - data/fluid/preprocessed/train/a/a-0.30/fine/0
+  - data/fluid/preprocessed/train/a/a-0.60/fine/0
+  - data/fluid/preprocessed/train/a/a-0.90/fine/0
+  - data/fluid/preprocessed/train/a/a-1.00/fine/0
+  - data/fluid/preprocessed/train/a/a0.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b0.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b0.10/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b0.20/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b0.30/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b0.50/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b0.60/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b0.70/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b0.80/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-0.10_b1.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.20_b0.10/fine/0
+  - data/fluid/preprocessed/train/b/a-0.20_b0.40/fine/0
+  - data/fluid/preprocessed/train/b/a-0.20_b0.50/fine/0
+  - data/fluid/preprocessed/train/b/a-0.20_b0.60/fine/0
+  - data/fluid/preprocessed/train/b/a-0.20_b0.80/fine/0
+  - data/fluid/preprocessed/train/b/a-0.20_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-0.20_b1.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.30_b0.20/fine/0
+  - data/fluid/preprocessed/train/b/a-0.30_b0.30/fine/0
+  - data/fluid/preprocessed/train/b/a-0.30_b0.50/fine/0
+  - data/fluid/preprocessed/train/b/a-0.30_b0.70/fine/0
+  - data/fluid/preprocessed/train/b/a-0.30_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-0.30_b1.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b0.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b0.10/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b0.20/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b0.30/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b0.40/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b0.50/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b0.60/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b0.80/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-0.40_b1.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.50_b0.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.50_b0.10/fine/0
+  - data/fluid/preprocessed/train/b/a-0.50_b0.20/fine/0
+  - data/fluid/preprocessed/train/b/a-0.50_b0.30/fine/0
+  - data/fluid/preprocessed/train/b/a-0.50_b0.40/fine/0
+  - data/fluid/preprocessed/train/b/a-0.50_b0.70/fine/0
+  - data/fluid/preprocessed/train/b/a-0.50_b0.80/fine/0
+  - data/fluid/preprocessed/train/b/a-0.50_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-0.50_b1.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b0.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b0.20/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b0.30/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b0.40/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b0.50/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b0.60/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b0.70/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b0.80/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-0.60_b1.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.70_b0.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.70_b0.10/fine/0
+  - data/fluid/preprocessed/train/b/a-0.70_b0.30/fine/0
+  - data/fluid/preprocessed/train/b/a-0.70_b0.50/fine/0
+  - data/fluid/preprocessed/train/b/a-0.70_b0.60/fine/0
+  - data/fluid/preprocessed/train/b/a-0.70_b0.70/fine/0
+  - data/fluid/preprocessed/train/b/a-0.70_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-0.70_b1.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.80_b0.00/fine/0
+  - data/fluid/preprocessed/train/b/a-0.80_b0.10/fine/0
+  - data/fluid/preprocessed/train/b/a-0.80_b0.20/fine/0
+  - data/fluid/preprocessed/train/b/a-0.80_b0.40/fine/0
+  - data/fluid/preprocessed/train/b/a-0.80_b0.70/fine/0
+  - data/fluid/preprocessed/train/b/a-0.80_b0.80/fine/0
+  - data/fluid/preprocessed/train/b/a-0.80_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-0.90_b0.20/fine/0
+  - data/fluid/preprocessed/train/b/a-0.90_b0.30/fine/0
+  - data/fluid/preprocessed/train/b/a-0.90_b0.40/fine/0
+  - data/fluid/preprocessed/train/b/a-0.90_b0.50/fine/0
+  - data/fluid/preprocessed/train/b/a-0.90_b0.60/fine/0
+  - data/fluid/preprocessed/train/b/a-0.90_b0.70/fine/0
+  - data/fluid/preprocessed/train/b/a-0.90_b0.80/fine/0
+  - data/fluid/preprocessed/train/b/a-0.90_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-0.90_b1.00/fine/0
+  - data/fluid/preprocessed/train/b/a-1.00_b0.20/fine/0
+  - data/fluid/preprocessed/train/b/a-1.00_b0.30/fine/0
+  - data/fluid/preprocessed/train/b/a-1.00_b0.40/fine/0
+  - data/fluid/preprocessed/train/b/a-1.00_b0.50/fine/0
+  - data/fluid/preprocessed/train/b/a-1.00_b0.60/fine/0
+  - data/fluid/preprocessed/train/b/a-1.00_b0.70/fine/0
+  - data/fluid/preprocessed/train/b/a-1.00_b0.80/fine/0
+  - data/fluid/preprocessed/train/b/a-1.00_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a-1.00_b1.00/fine/0
+  - data/fluid/preprocessed/train/b/a0.00_b0.20/fine/0
+  - data/fluid/preprocessed/train/b/a0.00_b0.40/fine/0
+  - data/fluid/preprocessed/train/b/a0.00_b0.50/fine/0
+  - data/fluid/preprocessed/train/b/a0.00_b0.60/fine/0
+  - data/fluid/preprocessed/train/b/a0.00_b0.70/fine/0
+  - data/fluid/preprocessed/train/b/a0.00_b0.80/fine/0
+  - data/fluid/preprocessed/train/b/a0.00_b0.90/fine/0
+  - data/fluid/preprocessed/train/b/a0.00_b1.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b0.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b0.10/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b0.20/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b0.40/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b0.50/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b0.70/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-0.10_b1.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.20_b0.10/fine/0
+  - data/fluid/preprocessed/train/c/a-0.20_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-0.20_b0.40/fine/0
+  - data/fluid/preprocessed/train/c/a-0.20_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-0.20_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-0.20_b0.90/fine/0
+  - data/fluid/preprocessed/train/c/a-0.20_b1.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.10/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.20/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.40/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.50/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.70/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b0.90/fine/0
+  - data/fluid/preprocessed/train/c/a-0.30_b1.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.10/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.20/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.40/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.50/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.70/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-0.40_b0.90/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b0.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b0.10/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b0.20/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b0.40/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b0.50/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b0.70/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-0.50_b1.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.10/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.20/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.40/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.50/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.70/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b0.90/fine/0
+  - data/fluid/preprocessed/train/c/a-0.60_b1.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b0.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b0.10/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b0.20/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b0.50/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b0.70/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b0.90/fine/0
+  - data/fluid/preprocessed/train/c/a-0.70_b1.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.80_b0.10/fine/0
+  - data/fluid/preprocessed/train/c/a-0.80_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-0.80_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-0.80_b0.70/fine/0
+  - data/fluid/preprocessed/train/c/a-0.80_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-0.80_b0.90/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.00/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.10/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.20/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.40/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.50/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.70/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b0.90/fine/0
+  - data/fluid/preprocessed/train/c/a-0.90_b1.00/fine/0
+  - data/fluid/preprocessed/train/c/a-1.00_b0.00/fine/0
+  - data/fluid/preprocessed/train/c/a-1.00_b0.20/fine/0
+  - data/fluid/preprocessed/train/c/a-1.00_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a-1.00_b0.40/fine/0
+  - data/fluid/preprocessed/train/c/a-1.00_b0.50/fine/0
+  - data/fluid/preprocessed/train/c/a-1.00_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a-1.00_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a-1.00_b1.00/fine/0
+  - data/fluid/preprocessed/train/c/a0.00_b0.00/fine/0
+  - data/fluid/preprocessed/train/c/a0.00_b0.20/fine/0
+  - data/fluid/preprocessed/train/c/a0.00_b0.30/fine/0
+  - data/fluid/preprocessed/train/c/a0.00_b0.40/fine/0
+  - data/fluid/preprocessed/train/c/a0.00_b0.60/fine/0
+  - data/fluid/preprocessed/train/c/a0.00_b0.70/fine/0
+  - data/fluid/preprocessed/train/c/a0.00_b0.80/fine/0
+  - data/fluid/preprocessed/train/c/a0.00_b0.90/fine/0
+  - data/fluid/preprocessed/train/c/a0.00_b1.00/fine/0
+  validation:
+  - data/fluid/preprocessed/validation/a/a-0.40/fine/0
+  - data/fluid/preprocessed/validation/a/a-0.50/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.20_b0.00/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.20_b0.30/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.20_b0.70/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.30_b0.10/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.30_b0.60/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.40_b0.70/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.50_b0.60/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.60_b0.10/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.70_b0.40/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.70_b0.80/fine/0
+  - data/fluid/preprocessed/validation/b/a-0.80_b0.30/fine/0
+  - data/fluid/preprocessed/validation/b/a-1.00_b0.10/fine/0
+  - data/fluid/preprocessed/validation/b/a0.00_b0.00/fine/0
+  - data/fluid/preprocessed/validation/b/a0.00_b0.10/fine/0
+  - data/fluid/preprocessed/validation/c/a-0.20_b0.70/fine/0
+  - data/fluid/preprocessed/validation/c/a-0.40_b1.00/fine/0
+  - data/fluid/preprocessed/validation/c/a-0.50_b0.90/fine/0
+  - data/fluid/preprocessed/validation/c/a-0.80_b0.00/fine/0
+  - data/fluid/preprocessed/validation/c/a-0.80_b0.40/fine/0
+  - data/fluid/preprocessed/validation/c/a-0.80_b0.50/fine/0
+  - data/fluid/preprocessed/validation/c/a-1.00_b0.10/fine/0
+  - data/fluid/preprocessed/validation/c/a0.00_b0.10/fine/0
+  - data/fluid/preprocessed/validation/c/a0.00_b0.50/fine/0
+inferer:
+  accomodate_length: 0
+  convert_to_order1: false
+  converter_parameters_pkl: null
+  data_directories: []
+  gpu_id: -1
+  less_output: false
+  model: null
+  output_directory: null
+  output_directory_base: data/inferred
+  overwrite: false
+  perform_inverse: true
+  perform_preprocess: false
+  read_simulation_type: fistr
+  return_all_results: true
+  save: true
+  skip_fem_data_creation: false
+  write_npy: true
+  write_simulation: false
+  write_simulation_base: null
+  write_simulation_stem: null
+  write_simulation_type: fistr
+  write_yaml: true
+model:
+  blocks:
+  - activation_after_residual: true
+    activations:
+    - tanh
+    - identity
+    allow_linear_residual: false
+    bias: false
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - GROUP1
+    - ISOGCN_GRAD_GEO
+    device: null
+    dropouts:
+    - 0.0
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys:
+    - geo
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: true
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: IN_GEO
+    no_grad: false
+    nodes:
+    - 3
+    - 8
+    - 16
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: ggeo
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: mlp
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - tanh
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - GROUP1
+    device: null
+    dropouts:
+    - 0.0
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys:
+    - ggeo
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: ISOGCN_GRAD_GEO
+    no_grad: false
+    nodes:
+    - 16
+    - 16
+    - 16
+    optional:
+      ah_w: true
+      propagations:
+      - convolution
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: ggeograd
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    - 1
+    - 2
+    time_series: false
+    type: iso_gcn
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: false
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - GROUP1
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys:
+    - u
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: true
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: IN_U
+    no_grad: false
+    nodes:
+    - 1
+    - 16
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: gu
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: mlp
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - leaky_relu
+    - identity
+    allow_linear_residual: false
+    bias: false
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - GROUP1
+    device: null
+    dropouts:
+    - 0.0
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys:
+    - p
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: true
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: IN_P
+    no_grad: false
+    nodes:
+    - 1
+    - 8
+    - 16
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: gp
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: mlp
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - ID_DIRICHLET
+    - OUT_DIRICHLET
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys:
+    - dirichlet
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: true
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: IN_DIRICHLET
+    no_grad: true
+    nodes:
+    - 1
+    - 16
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: null
+    reference_block_name: IN_U
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: share
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - GROUP1
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys: null
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: ID_DIRICHLET
+    no_grad: false
+    nodes:
+    - 16
+    - 16
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: gdirichlet
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: identity
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - ID_P_DIRICHLET
+    - OUT_P_DIRICHLET
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys:
+    - p_dirichlet
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: true
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: IN_P_DIRICHLET
+    no_grad: true
+    nodes:
+    - 1
+    - 16
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: null
+    reference_block_name: IN_P
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: share
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - GROUP1
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys: null
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: ID_P_DIRICHLET
+    no_grad: false
+    nodes:
+    - 16
+    - 16
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: gpdirichlet
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: identity
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - ID_GROUP
+    - ID_P
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys: null
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: GROUP1
+    no_grad: false
+    nodes:
+    - 96
+    - 32
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: null
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: group
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - OUT_DIRICHLET
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys:
+    - gu
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: ID_GROUP
+    no_grad: false
+    nodes:
+    - 32
+    - 32
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: null
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: identity
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - OUT_P_DIRICHLET
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys:
+    - gp
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: ID_P
+    no_grad: false
+    nodes:
+    - 32
+    - 32
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: null
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: identity
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - DECODER
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys: null
+    input_names:
+    - ID_GROUP
+    - IN_DIRICHLET
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: OUT_DIRICHLET
+    no_grad: false
+    nodes:
+    - 16
+    - 16
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: null
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: dirichlet
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - OUT_P
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys: null
+    input_names:
+    - ID_P
+    - IN_P_DIRICHLET
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: OUT_P_DIRICHLET
+    no_grad: false
+    nodes:
+    - 16
+    - 16
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: null
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: dirichlet
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - TS2F
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys: null
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: DECODER
+    no_grad: false
+    nodes:
+    - 16
+    - 1
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: null
+    reference_block_name: IN_U
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: pinv_mlp
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations: []
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys: null
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: true
+    kernel_sizes: null
+    losses: []
+    name: TS2F
+    no_grad: false
+    nodes:
+    - 1
+    - 1
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: u
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: time_series_to_features
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations:
+    - TS2F_P
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys: null
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: false
+    kernel_sizes: null
+    losses: []
+    name: OUT_P
+    no_grad: false
+    nodes:
+    - 16
+    - 1
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: null
+    reference_block_name: IN_P
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: pinv_mlp
+    weight_norm: false
+  - activation_after_residual: true
+    activations:
+    - identity
+    allow_linear_residual: false
+    bias: true
+    clip_grad_norm: null
+    clip_grad_value: null
+    coeff: null
+    destinations: []
+    device: null
+    dropouts:
+    - 0.0
+    hidden_activation: relu
+    hidden_dropout: 0.0
+    hidden_layers: null
+    hidden_nodes: null
+    input_dropout: 0.0
+    input_indices: null
+    input_keys: null
+    input_names: null
+    input_slice:
+    - 0
+    - null
+    - 1
+    is_first: false
+    is_last: true
+    kernel_sizes: null
+    losses: []
+    name: TS2F_P
+    no_grad: false
+    nodes:
+    - 1
+    - 1
+    optional: {}
+    output_activation: identity
+    output_dropout: 0.0
+    output_key: p
+    reference_block_name: null
+    residual: false
+    support_input_index: null
+    support_input_indices:
+    - 0
+    time_series: false
+    type: time_series_to_features
+    weight_norm: false
+  groups:
+  - blocks:
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - MUL
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - gu
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: true
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ID_U
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - DIRICHLET
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - gdirichlet
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: true
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: IN_DIRICHLET
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - MUL
+      - P_CAT
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - ggeo
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: true
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: IN_GEO
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - CAT
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: MUL
+      no_grad: false
+      nodes:
+      - 32
+      - 16
+      optional:
+        operator: mul
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: reducer
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - CAT
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - ggeograd
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: true
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: IN_GRAD_GEO
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - U_MLP
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: CAT
+      no_grad: false
+      nodes:
+      - 32
+      - 32
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: concatenator
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - tanh
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - DIRICHLET
+      device: null
+      dropouts:
+      - 0.0
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: U_MLP
+      no_grad: false
+      nodes:
+      - 32
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: equivariant_mlp
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ISO_GCN_LAPLACIAN
+      - ISO_GCN_JACOBIAN
+      - ADVECTION_CONTRACTION
+      - ADD_INTERMEDIATE
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names:
+      - U_MLP
+      - IN_DIRICHLET
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: DIRICHLET
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: dirichlet
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - tanh
+      - identity
+      allow_linear_residual: false
+      bias: false
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ADD_FRACTION
+      - ADD
+      device: null
+      dropouts:
+      - 0.0
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ISO_GCN_LAPLACIAN
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      - 16
+      optional:
+        ah_w: true
+        propagations:
+        - tensor_product
+        - contraction
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      - 1
+      - 2
+      time_series: false
+      type: iso_gcn
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - tanh
+      - identity
+      allow_linear_residual: false
+      bias: false
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ADVECTION_CONTRACTION
+      device: null
+      dropouts:
+      - 0.0
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ISO_GCN_JACOBIAN
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      - 16
+      optional:
+        ah_w: true
+        propagations:
+        - tensor_product
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      - 1
+      - 2
+      time_series: false
+      type: iso_gcn
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ADD
+      - ADD_FRACTION
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ADVECTION_CONTRACTION
+      no_grad: false
+      nodes:
+      - 32
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: contraction
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - FRACTION_MLP
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ADD_FRACTION
+      no_grad: false
+      nodes:
+      - 32
+      - 16
+      optional:
+        operator: add
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: reducer
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - tanh
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ADD_INTERMEDIATE
+      device: null
+      dropouts:
+      - 0.0
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: FRACTION_MLP
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: equivariant_mlp
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ISOGCN_SOURCE_POISSON
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ADD_INTERMEDIATE
+      no_grad: false
+      nodes:
+      - 32
+      - 16
+      optional:
+        operator: add
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: reducer
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - P_CAT
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - gp
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: true
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: IN_P
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - P_MLP
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: P_CAT
+      no_grad: false
+      nodes:
+      - 32
+      - 32
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: concatenator
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - tanh
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - GROUP_POISSON
+      device: null
+      dropouts:
+      - 0.0
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: P_MLP
+      no_grad: false
+      nodes:
+      - 32
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: gp
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: mlp
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - P_DIRICHLET
+      - ID_KEY_P_DIRICHLET
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - gpdirichlet
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: true
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ID_P_DIRICHLET
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - GROUP_POISSON
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ID_KEY_P_DIRICHLET
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: gpdirichlet
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - tanh
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - GCN_SOURCE_POISSON
+      device: null
+      dropouts:
+      - 0.0
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ISOGCN_SOURCE_POISSON
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      - 16
+      optional:
+        ah_w: true
+        propagations:
+        - contraction
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      - 1
+      - 2
+      time_series: false
+      type: iso_gcn
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - tanh
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - GROUP_POISSON
+      device: null
+      dropouts:
+      - 0.0
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: GCN_SOURCE_POISSON
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      - 16
+      optional:
+        ah_w: true
+        factor: 1.0
+        repeat: 1
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: gsource
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 3
+      time_series: false
+      type: gcn
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ID_OUT_P
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: GROUP_POISSON
+      no_grad: false
+      nodes:
+      - 48
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: group
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - P_DIRICHLET
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - gp
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ID_OUT_P
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ISOGCN_GRAD_P
+      - OUT_P
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names:
+      - ID_OUT_P
+      - ID_P_DIRICHLET
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: P_DIRICHLET
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: dirichlet
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - tanh
+      - identity
+      allow_linear_residual: false
+      bias: false
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ADD
+      device: null
+      dropouts:
+      - 0.0
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ISOGCN_GRAD_P
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      - 16
+      optional:
+        ah_w: true
+        propagations:
+        - convolution
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      - 1
+      - 2
+      time_series: false
+      type: iso_gcn
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - GCN
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ADD
+      no_grad: false
+      nodes:
+      - 48
+      - 16
+      optional:
+        operator: add
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: reducer
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: false
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: 1.0
+      destinations: []
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: true
+      kernel_sizes: null
+      losses: []
+      name: GCN
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional:
+        ah_w: true
+        factor: 1.0
+        repeat: 1
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: gu
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 3
+      time_series: false
+      type: gcn
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations: []
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: true
+      kernel_sizes: null
+      losses: []
+      name: OUT_P
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: gp
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    convergence_threshold: 1.0e-05
+    debug: false
+    inputs:
+      super_post_init: false
+      variables:
+        gdirichlet:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: ID_DIRICHLET
+            shape: []
+            skip: true
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+        ggeo:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: IN_GEO
+            shape: []
+            skip: true
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+        ggeograd:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: ISOGCN_GRAD_GEO
+            shape: []
+            skip: true
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+        gp:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: IN_P
+            shape: []
+            skip: false
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+        gpdirichlet:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: ID_P_DIRICHLET
+            shape: []
+            skip: true
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+        gu:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: IN_U
+            shape: []
+            skip: false
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+    mode: implicit
+    name: GROUP1
+    optional:
+      componentwise_alpha: false
+      divergent_threshold: 1000000000
+    outputs:
+      super_post_init: false
+      variables:
+        gp:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: OUT_P
+            shape: []
+            skip: false
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+        gu:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: OUT_ADD
+            shape: []
+            skip: false
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+    repeat: 4
+    support_inputs:
+    - nodal_x_grad_hop1
+    - nodal_y_grad_hop1
+    - nodal_z_grad_hop1
+    - nodal_nadj
+    time_series_length: 1
+  - blocks:
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - DIRICHLET
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - gp
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: true
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: IN_P
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - DIRICHLET
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - gpdirichlet
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: true
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: IN_DIRICHLET
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ISOGCN_LAPLACIAN_P
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names:
+      - IN_P
+      - IN_DIRICHLET
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: DIRICHLET
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: dirichlet
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ADD
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys:
+      - gsource
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: true
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: IN_SOURCE
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      optional: {}
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: identity
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - tanh
+      - identity
+      allow_linear_residual: false
+      bias: false
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: null
+      destinations:
+      - ADD
+      device: null
+      dropouts:
+      - 0.0
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: false
+      kernel_sizes: null
+      losses: []
+      name: ISOGCN_LAPLACIAN_P
+      no_grad: false
+      nodes:
+      - 16
+      - 16
+      - 16
+      optional:
+        ah_w: true
+        propagations:
+        - convolution
+        - contraction
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      - 1
+      - 2
+      time_series: false
+      type: iso_gcn
+      weight_norm: false
+    - activation_after_residual: true
+      activations:
+      - identity
+      allow_linear_residual: false
+      bias: true
+      clip_grad_norm: null
+      clip_grad_value: null
+      coeff: 1.0
+      destinations: []
+      device: null
+      dropouts:
+      - 0.0
+      hidden_activation: relu
+      hidden_dropout: 0.0
+      hidden_layers: null
+      hidden_nodes: null
+      input_dropout: 0.0
+      input_indices: null
+      input_keys: null
+      input_names: null
+      input_slice:
+      - 0
+      - null
+      - 1
+      is_first: false
+      is_last: true
+      kernel_sizes: null
+      losses: []
+      name: ADD
+      no_grad: false
+      nodes:
+      - 32
+      - 16
+      optional:
+        operator: add
+      output_activation: identity
+      output_dropout: 0.0
+      output_key: null
+      reference_block_name: null
+      residual: false
+      support_input_index: null
+      support_input_indices:
+      - 0
+      time_series: false
+      type: reducer
+      weight_norm: false
+    convergence_threshold: 1.0e-05
+    debug: false
+    inputs:
+      super_post_init: false
+      variables:
+        gp:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: P_MLP
+            shape: []
+            skip: false
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+        gpdirichlet:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: ID_KEY_P_DIRICHLET
+            shape: []
+            skip: true
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+        gsource:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: GCN_SOURCE_POISSON
+            shape: []
+            skip: true
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+    mode: implicit
+    name: GROUP_POISSON
+    optional: {}
+    outputs:
+      super_post_init: false
+      variables:
+        gp:
+          super_post_init: true
+          variables:
+          - dim: 16
+            name: OUT_P
+            shape: []
+            skip: false
+            time_series: false
+            time_slice:
+            - null
+            - null
+            - null
+    repeat: 5
+    support_inputs:
+    - nodal_x_grad_hop1
+    - nodal_y_grad_hop1
+    - nodal_z_grad_hop1
+    - nodal_nadj
+    time_series_length: null
+optuna:
+  hyperparameters: []
+  n_trial: 100
+  output_base_directory: models/optuna
+  setting: {}
+preprocess: {}
+replace_preprocessed: false
+study:
+  n_fold: 10
+  plot_validation: false
+  relative_develop_size_linspace:
+  - 0.2
+  - 1.0
+  - 5
+  root_directory: null
+  scale_loss: false
+  type: learning_curve
+  unit_error: '-'
+  x_from_zero: false
+  x_logscale: false
+  y_from_zero: false
+  y_logscale: false
+trainer:
+  batch_size: 1
+  clip_grad_norm: null
+  clip_grad_value: null
+  compute_accuracy: false
+  data_parallel: false
+  display_mergin: 4
+  draw_network: true
+  element_batch_size: -1
+  element_wise: false
+  figure_format: pdf
+  gpu_id: 0
+  inputs:
+    super_post_init: false
+    variables:
+      dirichlet:
+        super_post_init: true
+        variables:
+        - dim: 1
+          name: nodal_boundary_U
+          shape: []
+          skip: false
+          time_series: false
+          time_slice:
+          - null
+          - null
+          - null
+      geo:
+        super_post_init: true
+        variables:
+        - dim: 1
+          name: nodal_level0p5
+          shape: []
+          skip: false
+          time_series: false
+          time_slice:
+          - null
+          - null
+          - null
+        - dim: 1
+          name: nodal_level1
+          shape: []
+          skip: false
+          time_series: false
+          time_slice:
+          - null
+          - null
+          - null
+        - dim: 1
+          name: nodal_level2
+          shape: []
+          skip: false
+          time_series: false
+          time_slice:
+          - null
+          - null
+          - null
+      p:
+        super_post_init: true
+        variables:
+        - dim: 1
+          name: nodal_p_step0
+          shape: []
+          skip: false
+          time_series: false
+          time_slice:
+          - null
+          - null
+          - null
+      p_dirichlet:
+        super_post_init: true
+        variables:
+        - dim: 1
+          name: nodal_boundary_p
+          shape: []
+          skip: false
+          time_series: false
+          time_slice:
+          - null
+          - null
+          - null
+      u:
+        super_post_init: true
+        variables:
+        - dim: 1
+          name: nodal_U_step0
+          shape: []
+          skip: false
+          time_series: false
+          time_slice:
+          - null
+          - null
+          - null
+  iterator: serial
+  lazy: false
+  log_trigger_epoch: 1
+  loss_function: mse
+  loss_slice:
+  - null
+  - null
+  - null
+  model_parallel: false
+  n_epoch: 10000
+  name: penn_rep4
+  non_blocking: true
+  num_workers: 0
+  optimizer: adam
+  optimizer_setting:
+    betas:
+    - 0.9
+    - 0.99
+    eps: 1.0e-08
+    lr: 3.125e-05
+    weight_decay: 0
+  optuna_trial: null
+  output_directory: models/penn_rep4_lr5.000e-04_2022-08-01_03-12-39.390220_cont4_lr3.125e-05
+  output_stats: false
+  outputs:
+    super_post_init: false
+    variables:
+      p:
+        super_post_init: true
+        variables:
+        - dim: 1
+          name: nodal_p_step40
+          shape: []
+          skip: false
+          time_series: false
+          time_slice:
+          - null
+          - null
+          - null
+      u:
+        super_post_init: true
+        variables:
+        - dim: 1
+          name: nodal_U_step40
+          shape: []
+          skip: false
+          time_series: false
+          time_slice:
+          - null
+          - null
+          - null
+  patience: 3
+  pretrain_directory: models/penn_rep4_lr5.000e-04_2022-08-01_03-12-39.390220_cont3_lr6.250e-05
+  prune: false
+  recursive: true
+  restart_directory: null
+  seed: 0
+  simplified_model: false
+  snapshot_choise_method: best
+  split_ratio: {}
+  stop_trigger_epoch: 10
+  suffix: lr5.000e-04
+  support_input: null
+  support_inputs:
+  - nodal_x_grad_hop1
+  - nodal_y_grad_hop1
+  - nodal_z_grad_hop1
+  - nodal_nadj
+  time_series: false
+  time_series_split: null
+  time_series_split_evaluation: null
+  use_siml_updater: true
+  validation_batch_size: 1
+  validation_directories: []
+  validation_element_batch_size: -1

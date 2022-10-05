@@ -1,0 +1,12 @@
+[submodule "lib/siml"]
+	path = lib/siml
+	url = git@github.com:ricosjp/siml.git
+	branch = isogcn_boundary
+[submodule "lib/femio"]
+	path = lib/femio
+	url = git@github.com:ricosjp/femio.git
+	branch = develop
+[submodule "mp-neural-pde-solvers"]
+	path = mp-neural-pde-solvers
+	url = git@github.com:yellowshippo/MP-Neural-PDE-Solvers.git
+	branch = neurips2022

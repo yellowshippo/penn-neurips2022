@@ -1,0 +1,325 @@
+data:
+  raw: data/ad/raw
+  interim: data/ad/interim
+  preprocessed: data/ad/preprocessed
+  inferred: data/ad/inferred
+  train:
+    - data/ad/preprocessed/train
+  validation:
+    - data/ad/preprocessed/validation
+  test:
+    - data/ad/preprocessed/test
+conversion:
+  required_file_names:
+    - 'VTK'
+  time_series: false
+  file_type: polyvtk
+  skip_femio: true
+  save_femio: false
+  skip_save: false
+trainer:
+  recursive: true
+  output_stats: false
+  inputs:
+    geo:
+      - name: nodal_level0p5
+        dim: 1
+      - name: nodal_level1
+        dim: 1
+      - name: nodal_level2
+        dim: 1
+      - name: diffusion
+        dim: 1
+      - name: velocity_norm
+        dim: 1
+
+    u:
+      - name: nodal_U_step0
+    t:
+      - name: nodal_initial_T
+
+    dirichlet:
+      - name: nodal_boundary_T
+        dim: 1
+  support_inputs:
+    - nodal_x_grad_hop1
+    - nodal_y_grad_hop1
+    - nodal_z_grad_hop1
+    - nodal_nadj
+  outputs:
+    t:
+      - name: nodal_T_step25
+        dim: 1
+      - name: nodal_T_step50
+        dim: 1
+      - name: nodal_T_step75
+        dim: 1
+      - name: nodal_T_step100
+        dim: 1
+  prune: true
+  batch_size: 100
+  n_epoch: 10000
+  log_trigger_epoch: 1
+  stop_trigger_epoch: 100
+  seed: 0
+  lazy: false
+  num_workers: 0
+model:
+  blocks:
+    - name: IN_GEO
+      type: mlp
+      destinations:
+        - GROUP1
+      is_first: true
+      input_keys:
+        - geo
+      output_key: ggeo
+      bias: false
+      nodes:
+        - -1
+        - 16
+        - 64
+      activations:
+        - tanh
+        - identity
+
+    - name: IN_U
+      type: equivariant_mlp
+      destinations:
+        - GROUP1
+      is_first: true
+      input_keys:
+        - u
+      output_key: gu
+      bias: false
+      nodes:
+        - -1
+        - 64
+        - 64
+      activations:
+        - tanh
+        - identity
+    - name: IN_T
+      type: mlp
+      destinations:
+        - GROUP1
+      is_first: true
+      input_keys:
+        - t
+      output_key: gt
+      bias: true
+      nodes:
+        - -1
+        - 16
+        - 64
+      activations:
+        - leaky_relu
+        - identity
+
+    - name: GROUP1
+      type: group
+      destinations:
+        - ID_GROUP
+    - name: ID_GROUP
+      type: identity
+      input_keys:
+        - gt
+      destinations:
+        - DECODER
+
+    - name: DECODER
+      type: mlp
+      destinations:
+        - OUT_DIRICHLET
+      nodes:
+        - 64
+        - 16
+        - 1
+      activations:
+        - leaky_relu
+        - identity
+
+    - name: IN_DIRICHLET
+      type: identity
+      is_first: true
+      input_keys:
+        - dirichlet
+      destinations:
+        - OUT_DIRICHLET
+
+    - name: OUT_DIRICHLET
+      type: dirichlet
+      input_names:
+        - DECODER
+        - IN_DIRICHLET
+      destinations:
+        - TS2F
+
+    - name: TS2F
+      type: time_series_to_features
+      is_last: true
+      output_key: t
+
+  groups:
+    - name: GROUP1
+      debug: false
+      time_series_length: 4
+      repeat: 8
+      mode: implicit
+      convergence_threshold: 1.0e-5
+      optional:
+        componentwise_alpha: false
+        divergent_threshold: 1000000000
+      inputs:
+        ggeo:
+          - name: IN_GEO
+            dim: 64
+            skip: true
+        gu:
+          - name: IN_U
+            dim: 64
+            skip: true
+        gt:
+          - name: IN_T
+            dim: 64
+            skip: false
+      support_inputs:
+        - nodal_x_grad_hop1
+        - nodal_y_grad_hop1
+        - nodal_z_grad_hop1
+        - nodal_nadj
+      outputs:
+        gt:
+          - name: OUT_ADD
+            dim: 64
+      blocks:
+        - name: ID_T
+          type: identity
+          is_first: true
+          input_keys:
+            - gt
+          destinations:
+            - MUL
+
+        - name: IN_GEO
+          type: identity
+          is_first: true
+          input_keys:
+            - ggeo
+          destinations:
+            - MUL
+            - MAT_MLP
+        - name: MUL
+          type: reducer
+          destinations:
+            - T_MLP
+          optional:
+            operator: mul
+
+        - name: T_MLP
+          type: mlp
+          bias: true
+          destinations:
+            - ISO_GCN_LAPLACIAN
+            - ISO_GCN_GRADIENT
+          nodes:
+            - -1
+            - 64
+            - 64
+          activations:
+            - tanh
+            - identity
+
+        # Diffusion term
+        - name: MAT_MLP
+          type: mlp
+          bias: true
+          destinations:
+            - MUL_DIFFUSION
+          nodes:
+            - -1
+            - 64
+            - 64
+          activations:
+            - tanh
+            - identity
+        - name: ISO_GCN_LAPLACIAN
+          type: iso_gcn
+          destinations:
+            - MUL_DIFFUSION
+          residual: false
+          bias: false
+          support_input_indices:
+            - 0
+            - 1
+            - 2
+          nodes:
+            - -1
+            - 64
+            - 64
+          activations:
+            - tanh
+            - identity
+          optional:
+            propagations:
+              - convolution
+              - contraction
+            ah_w: true
+        - name: MUL_DIFFUSION
+          type: reducer
+          destinations:
+            - ADD
+          optional:
+            operator: mul
+
+        # Advection term
+        - name: ISO_GCN_GRADIENT
+          type: iso_gcn
+          destinations:
+            - ADVECTION_CONTRACTION
+          residual: false
+          bias: false
+          support_input_indices:
+            - 0
+            - 1
+            - 2
+          nodes:
+            - -1
+            - 64
+            - 64
+          activations:
+            - tanh
+            - identity
+          optional:
+            propagations:
+              - convolution
+            ah_w: true
+        - name: ID_U
+          type: identity
+          is_first: true
+          input_keys:
+            - gu
+          destinations:
+            - ADVECTION_CONTRACTION
+        - name: ADVECTION_CONTRACTION
+          type: contraction
+          destinations:
+            - ADD
+
+        - name: ADD
+          type: reducer
+          destinations:
+            - OUT_MLP
+          optional:
+            operator: add
+
+        - name: OUT_MLP
+          type: mlp
+          is_last: true
+          output_key: gt
+          bias: true
+          nodes:
+            - -1
+            - 64
+          activations:
+            - tanh

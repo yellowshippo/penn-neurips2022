@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "penn_neurips2022"
+version = "0.0.1"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+
+femio = {path = "lib/femio/dist/femio-0.3.2-py3-none-any.whl"}
+pysiml = {path = "lib/siml/dist/pysiml-0.2.8-py3-none-any.whl"}
+PyQt5 = {version = "^5.14.0", optional = true}
+mysqlclient = {version = "^1.4.2", optional = true}
+SQLAlchemy = {version = "^1.3.4", optional = true}
+lxml = "^4.6.3"
+
+[tool.poetry.extras]
+PyQt5 = ["PyQt5"]
+mysqlclient = ["mysqlclient"]
+SQLAlchemy = ["SQLAlchemy"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.0.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

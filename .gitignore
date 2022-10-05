@@ -1,0 +1,51 @@
+# General
+*~
+.DS_Store
+
+# Data directory
+data
+tests/data
+models
+inputs
+siml_template_optimize
+pretrained
+results
+deploy
+_*
+
+# SQLite file
+*.db
+
+# Figures
+figs/*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Object files
+cpp/obj
+*.o
+
+# Numpy data
+*.npy
+
+# pyenv
+.python-version
+
+# dotenv
+.env
+
+# virtualenv
+.venv/
+venv/
+ENV/
+
+# poetry
+poetry.*
+
+# Misc
+temp
+tmp
+qexe
