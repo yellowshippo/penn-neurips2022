@@ -86,7 +86,7 @@ NOTE: We plan to add a persistent identifier, metadata, and license to this data
 ### Raw data for the incompressible flow dataset
 Raw data (OpenFOAM analysis results) are available in (5 GB for each, 303 GB in total):
 - https://savanna.ritc.jp/~horiem/penn_neurips2022/data/fluid/raw.tar.gz.partaa
-- https://savanna.ritc.jp/~horiem/penn_neurips2022/data/fluid/raw.tar.gz.partaa
+- https://savanna.ritc.jp/~horiem/penn_neurips2022/data/fluid/raw.tar.gz.partab
 - ...
 - https://savanna.ritc.jp/~horiem/penn_neurips2022/data/fluid/raw.tar.gz.partci
 
