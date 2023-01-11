@@ -3,6 +3,19 @@
 This repository is the official implementation of a NeurIPS 2022 paper: "Physics-Embedded Neural Networks: Graph Neural PDE Solvers with Mixed Boundary Conditions."
 ![](figs/overview.svg)
 
+Please cite us as:
+```
+@inproceedings{
+horie2022physicsembedded,
+title={Physics-Embedded Neural Networks: Graph Neural {PDE} Solvers with Mixed Boundary Conditions},
+author={Masanobu Horie and NAOTO MITSUME},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=B3TOg-YCtzo}
+}
+```
+
 This code is based on the original IsoGCN's code: https://github.com/yellowshippo/isogcn-iclr2021 (including FEMIO (https://github.com/ricosjp/femio) and SiML (https://github.com/ricosjp/siml) as submodules with some modifications), except for `mp-neural-pde-solvers`  based on https://github.com/brandstetter-johannes/MP-Neural-PDE-Solvers.
 
 
@@ -70,6 +83,12 @@ make fluid_data
 
 NOTE: We plan to add a persistent identifier, metadata, and license to this dataset upon publication.
 
+### Raw data for the incompressible flow dataset
+Raw data (OpenFOAM analysis results) are available in (5 GB for each, 303 GB in total):
+- https://savanna.ritc.jp/~horiem/penn_neurips2022/data/fluid/raw.tar.gz.partaa
+- https://savanna.ritc.jp/~horiem/penn_neurips2022/data/fluid/raw.tar.gz.partaa
+- ...
+- https://savanna.ritc.jp/~horiem/penn_neurips2022/data/fluid/raw.tar.gz.partci
 
 ### Pre-trained Models
 
