@@ -8,7 +8,7 @@ Please cite us as:
 @inproceedings{
 horie2022physicsembedded,
 title={Physics-Embedded Neural Networks: Graph Neural {PDE} Solvers with Mixed Boundary Conditions},
-author={Masanobu Horie and NAOTO MITSUME},
+author={Masanobu Horie and Naoto Mitsume},
 booktitle={Advances in Neural Information Processing Systems},
 editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
 year={2022},
